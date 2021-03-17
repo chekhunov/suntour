@@ -1,0 +1,30 @@
+.card-service {
+  &__box {
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1;
+  }
+
+  &__img {
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    &:hover {
+      color: red;
+      border-color: #CB0000;
+    }
+  }
+
+  &__text {
+    margin-top: 10px;
+    margin-left: 2px;
+  }
+
+  &__discount {
+    margin-top: 10px;
+    margin-right: 2px;
+    color: red;
+  }
+}

@@ -1,0 +1,17 @@
+.about {
+  padding: 67px 0 44px;
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 50px;
+    @extend %trebuchetMS-700;
+  }
+
+  &__text {
+    line-height: 1.5;
+
+    &--bold {
+      margin-bottom: 10px;
+    }
+  }
+}

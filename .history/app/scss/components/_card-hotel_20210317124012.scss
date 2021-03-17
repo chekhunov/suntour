@@ -1,0 +1,298 @@
+.card-hotel {
+  margin-bottom: 55px;
+
+  @include _1024 {
+    width: 100%;
+  }
+
+  &__title {
+  }
+
+  .star {
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    @include _768 {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    position: relative;
+  }
+  
+  &__img {
+    position: relative;
+    width: 100%;
+    min-height: 553px;
+    margin-bottom: 21px;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-position: top center;
+    object-fit: cover;
+
+    @include _1024 {
+      display: none;
+    }
+  }
+
+  &__imgphone {
+    display: none;
+    background-repeat: no-repeat;
+    background-position: top center;
+    object-fit: cover;
+
+    @include _1024 {
+      display: inline-block;
+      min-height: 520px;
+      margin-bottom: 10px;
+      align-items: flex-start;
+      background-size: contain;
+    }
+  }
+
+  &__box {
+    position: absolute;
+    bottom: 8%;
+    width: 250px;
+    height: 250px;
+    margin-left: 32px;
+    margin-bottom: 33px;
+    padding: 45px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff200;
+    opacity: 0.7;
+    border-radius: 150px;
+
+    @include _1024 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    @include _425 {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  &__tour {
+    width: 169px;
+    height: 158px;
+    font-size: 26px;
+    line-height: 1.1;
+    text-align: center;
+    @extend %trebuchetMS-700;
+
+    @include _425 {
+      font-size: 22px;
+    }
+
+    @include _425 {
+      padding-bottom: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 18px;
+    }
+  }
+
+  &__title-tour {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  &__code-tour,
+  &__ratinghotel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+
+  &__ratinghotel {
+    align-items: flex-start;
+    line-height: 1.2;
+
+    @include _425 {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__label {
+    margin-bottom: 5px;
+    font-size: 17px;
+    @extend %trebuchetMS-700;
+  }
+
+  &__code {
+    width: 108px;
+    height: 31px;
+    margin-top: -2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    line-height: 1;
+    background-color: black;
+    color: white;
+    @extend %trebuchetMS-700;
+
+    @include _425 {
+      width: 90px;
+      height: 24px;
+      font-size: 18px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+
+    @include _1024 {
+      width: 100%;
+    }
+  }
+
+  &__cost {
+    min-width: 425px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 35px;
+    @extend %trebuchetMS-700;
+
+    @include _425 {
+      min-width: 100%;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+  }
+
+  .jq-ry-container {
+    width: 145px !important;
+  }
+
+  .jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group > svg {
+    padding-right: 3px;
+  }
+
+  &__sunday {
+    max-width: 160px;
+    margin-top: -36px;
+    margin-right: 87px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 30px;
+    line-height: 1;
+    z-index: 10;
+
+    @include _1024 {
+      margin-top: 0;
+      margin-left: 80px;
+      margin-right: 0;
+      font-size: 22px;
+    }
+
+    @include _768 {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 20px;
+      margin-left: 0;
+      padding: 10px 0;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      background-color: rgb(223, 223, 223);
+    }
+
+    @include _425 {
+      font-size: 20px;
+    }
+  }
+
+  &__day {
+    margin-left: -5px;
+    font-size: 89px;
+    font-weight: bold;
+    line-height: 0.9;
+    color: gray;
+    @extend %trebuchetMS-700;
+
+    @include _1024 {
+      font-size: 70px;
+    }
+
+    @include _768 {
+      margin-right: 20px;
+      font-size: 35px;
+    }
+  }
+
+  &__rating {
+    max-width: 530px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include _425 {
+      flex-direction: column;
+    }
+  }
+
+  &__averagenum {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -8px;
+    font-size: 24px;
+    background-color: #00bff3;
+    color: white;
+    @extend %trebuchetMS-700;
+
+    @include _425 {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    line-height: 1;
+    text-transform: uppercase;
+
+    @include _768 {
+      margin-bottom: 10px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+
+  &__item-num {
+    font-size: 18px;
+    @extend %arial-700;
+  }
+}

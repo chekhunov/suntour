@@ -1,0 +1,19 @@
+.footer {
+  &__content {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #777777;
+  }
+
+  &__link {
+    color: #00BFF3;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s;
+
+    &:hover {
+      border-color: rgba(0, 191, 243, 0.25);
+    }
+  }
+}

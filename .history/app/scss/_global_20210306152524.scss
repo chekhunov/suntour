@@ -1,0 +1,56 @@
+@import "mixins";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: black;
+  background-color: white;
+  @extend %arial-400;
+}
+
+.container {
+  max-width: 1070px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+a,
+button {
+  outline: transparent;
+  cursor: pointer;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.logo {
+  margin-right: 6px;
+  &__img {
+    max-width: 179px;
+    max-height: 44px;
+    object-fit: cover;
+  }
+}
+
+.title,
+.price {
+  font-size: 37px;
+  line-height: 1.2;
+  color: black;
+  @extend %trebuchetMS-700;
+}
+
+.title {
+  border-bottom: 1px solid #000;
+}

@@ -1,0 +1,13 @@
+
+.content {
+  padding: 24px 0;
+
+  &__services {
+    display: flex;
+    justify-content: space-between;
+
+    @include _600 {
+      flex-direction: column;
+    }
+  }
+}

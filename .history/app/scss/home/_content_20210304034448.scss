@@ -1,0 +1,17 @@
+.card-hotel {
+  &__image {
+    // --ratio: 553 / 1040;
+    // width: 100%;
+    // height: 100%;
+    width: 1040px;
+    // height: calc(100vw * var(--ratio));
+    height: 553px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    object-fit: cover;
+  }
+}

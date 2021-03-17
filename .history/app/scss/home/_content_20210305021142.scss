@@ -1,0 +1,9 @@
+
+.content {
+  padding: 30px 0;
+
+  &__services {
+    display: flex;
+    justify-content: space-between;
+  }
+}

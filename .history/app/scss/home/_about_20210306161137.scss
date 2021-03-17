@@ -1,0 +1,118 @@
+.about {
+  padding: 50px 0 44px;
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 50px;
+    lh1
+    @extend %trebuchetMS-700;
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+    line-height: 1.5;
+
+    &--bold {
+      margin-bottom: 10px;
+    }
+
+    &--desc {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__lead {
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px;
+    font-style: italic;
+
+    &::before {
+      display: inline-block;
+      content: "";
+      height: 120px;
+      width: 8px;
+      margin-left: 45px;
+      margin-right: 16px;
+      background-color: #00bff3;
+    }
+  }
+
+  &__item {
+    &--right {
+      width: 100%;
+      max-width: 227px;
+      margin-top: 150px;
+      margin-left: 37px;
+    }
+  }
+
+  &__caption {
+    margin-bottom: 6px;
+    font-size: 22px;
+    @extend %arial-700;
+
+    &--beauty {
+      font-size: 16px;
+    }
+  }
+
+  &__num {
+    font-size: 100px;
+    color: #777777;
+    @extend %trebuchetMS-700;
+  }
+
+  &__subtitle {
+    min-width: 224px;
+    margin-bottom: 8px;
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  &__desc {
+    font-size: 20px;
+    color: grey;
+  }
+
+  .table {
+    width: 776px;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+    @extend %arial-700;
+    th {
+      text-align: left;
+      width: 130px;
+      padding: 10px 0 9px;
+    }
+
+    td {
+      padding: 13px 0 0;
+      font-size: 10px;
+    }
+
+    &__title {
+      background-color: rgba(119, 119, 119, 0.2);
+      box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.15);
+    }
+
+    &__row {
+      padding-left: 10px !important;
+      font-size: 14px !important;
+    }
+  }
+
+  &__elem {
+    margin-left: 5px;
+    line-height: 1.5;
+
+    &::before {
+      content: "—";
+      position: relative;
+    }
+  }
+}

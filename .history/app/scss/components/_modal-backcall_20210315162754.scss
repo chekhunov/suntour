@@ -1,0 +1,15 @@
+.backcall {
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__label {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}

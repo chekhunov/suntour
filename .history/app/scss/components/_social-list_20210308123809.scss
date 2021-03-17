@@ -1,0 +1,59 @@
+.social {
+  display: flex;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__icon {
+    width: 33px;
+    height: 32px;
+    fill: white;
+    transition: fill 0.3s;
+
+    &:hover {
+      fill: rgb(224, 224, 224);
+    }
+  }
+}
+
+.about {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    .social {
+      &__icon {
+        display: none;
+        fill: #00bff3;
+        transition: fill 0.3s;
+
+        &:hover {
+          fill: rgb(224, 224, 224);
+        }
+
+        @include _600 {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  .social {
+    &__icon {
+      fill: #00bff3;
+      transition: fill 0.3s;
+
+      &:hover {
+        fill: rgb(224, 224, 224);
+      }
+
+      @include _600 {
+        display: none;
+      }
+    }
+  }
+}

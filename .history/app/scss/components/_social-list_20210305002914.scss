@@ -1,0 +1,21 @@
+.social {
+  display: flex;
+
+  &__item {
+    cursor: pointer;
+    
+    &:not(:last-child){
+    margin-right: 10px;
+    }
+  }
+
+  &__icon {
+    width: 33px;
+    height: 32px;
+    fill: white;
+
+    &:hover {
+      fill: rgb(224, 224, 224);
+    }
+  }
+}

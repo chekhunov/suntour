@@ -1,0 +1,61 @@
+.about {
+  padding: 67px 0 44px;
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 50px;
+    @extend %trebuchetMS-700;
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+    line-height: 1.5;
+
+    &--bold {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__lead {
+    mb
+  }
+
+  &__item {
+    &--right {
+      width: 100%;
+      max-width: 227px;
+      margin-top: 150px;
+      margin-left: 37px;
+    }
+  }
+
+  &__caption {
+    font-size: 22px;
+    @extend %arial-700;
+
+    &--beauty {
+      font-size: 16px;
+    }
+  }
+
+  &__num {
+    font-size: 100px;
+    color: #777777;
+    @extend %trebuchetMS-700;
+  }
+
+  &__subtitle {
+    margin-bottom: 8px;
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  &__desc {
+    font-size: 20px;
+    color: grey;
+  }
+}

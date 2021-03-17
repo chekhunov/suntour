@@ -1,0 +1,31 @@
+.card-hotel {
+  &__image {
+    max-width: 1040px;
+    min-height: 553px;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    object-fit: cover;
+  }
+
+  &__box {
+    width: 250px;
+    height: 250px;
+    margin-left: 32px;
+    margin-bottom: 33px;
+    display: flex;
+    justify-content: center;
+    // text-align: center;
+    background-color: #FFF200;
+    opacity: 0.7;
+    border-radius: 150px;
+  }
+
+  &__tour {
+    width: 169px;
+    height: 158px;
+  }
+}

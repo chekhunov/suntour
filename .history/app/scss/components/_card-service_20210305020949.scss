@@ -1,0 +1,16 @@
+.card-service {
+  &__box {
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    margin-left: 2px;
+  }
+
+  &__discount {
+    margin-right: 2px;
+    color: red;
+  }
+}
